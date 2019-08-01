@@ -3,11 +3,10 @@ Fork of https://github.com/ukabu/dev-on-chromeos.git
 Setup development tool on Chrome OS Terminal (aka Crostini).
 
 These scripts setup all the tools I need :
-- NodeJS for React/NextJS apps
+- NodeJS and Docker
 - Bash scripting (jq, httpie, curl)
 - VSCode for coding
 - python3, pip and pipenv
-- ...
 
 Open the Terminal app, then
 
