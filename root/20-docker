@@ -5,11 +5,18 @@ fi
 
 if [[ ! -e /etc/apt/sources.list.d/docker.list ]]
 then
-    echo "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list
+   # echo "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list
+
+    add-apt-repository \
+	   "deb [arch=amd64] https://download.docker.com/linux/debian \
+	      $(lsb_release -cs) \
+	         stable"
+
 
     apt-get update
 fi
 
-apt-get install -y docker-ce
+apt-get install -y docker-ce docker-ce-cli 
 groupadd -f docker
 usermod -aG docker $SUDO_USER
+newgrp docker

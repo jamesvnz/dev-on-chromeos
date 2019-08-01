@@ -16,4 +16,5 @@ apt-get install -y \
   libnss3-tools \
   unzip \
   wget \
-  zip
+  zip \
+  software-properties-common
