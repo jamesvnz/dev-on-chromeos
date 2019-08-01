@@ -15,5 +15,7 @@ for SETUP_SCRIPT in ls $DIR/user/??-*; do
 done
 
 mkdir -p $HOME/projects
+mkdir -p $HOME/tmp
+mkdir -p $HOME/.ssh
 
 echo "Logout and log back in to synchronize all the bits and bytes."
