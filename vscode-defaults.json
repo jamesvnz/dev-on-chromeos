@@ -2,6 +2,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "window.titleBarStyle": "custom",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "'Fira Code Retina'",
   "cSpell.language": "en"
 }
